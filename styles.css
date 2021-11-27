@@ -2,20 +2,31 @@
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 html, body {
     background-color: #F6F8F8;
     height: 100%;
+    /* overflow-x: hidden; */
+    background-clip: content-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    padding: 0px 15%;
 }
 
 header {
     background-color: #3850B3;
     color: #fff;
+}
+
+header .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 200px) auto minmax(min-content, 250px);
+    grid-template-columns: minmax(min-content, 200px) auto auto;
     align-items: center;
     height: 5rem;
-    padding: 0 30px;
-
 }
 
 header a {
@@ -27,19 +38,27 @@ header ul {
     list-style-type: none;
     display: flex;
     justify-content: start;
+    padding-inline-start: 0;
     flex-wrap: wrap;
 }
 
 header li {
-    margin-right: 2em;
+    margin-left: 2em;
 }
 
 header .logo {
-    margin-left: 4em;
+    grid-column: span 2;
+}
+
+header nav {
+    justify-self: end;
 }
 
 .site-banner {
     background-color: #3850B3;
+}
+
+.site-banner > .container {
     display: grid;
     grid: auto-flow minmax(min-content, 600px) / repeat(12, 1fr);
     align-items: center;
@@ -48,7 +67,8 @@ header .logo {
 .site-banner .banner-text {
     grid-column: 1 / span 6;
     justify-self: end;
-    margin-right: 2rem;
+    margin-right: 6rem;
+    font-size: x-large;
 }
 
 .site-banner .banner-text > h2, .site-banner .banner-text > p {
@@ -64,11 +84,11 @@ header .logo {
     background-color: #FFFFFF;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: -75px;
+    margin-top: -50px;
     width: 60%;
-    height: 150px;
-    position: fixed;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    height: 220px;
+    position: static;
+    box-shadow:  1px 3px 0 rgba(12, 26, 61, 0.06), 0 10px 14px rgba(12, 26, 61, 0.08);
     display: grid;
     grid: 1fr / repeat(12, 1fr);
     align-items: center;
@@ -83,6 +103,9 @@ header .logo {
     grid-column: 5 / -1;
     display: flex;
     flex-direction: column;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0 50px 0 0;
 }
 
 .main-card > .main-card-text > p {
