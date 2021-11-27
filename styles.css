@@ -78,6 +78,7 @@ header nav {
 .site-banner .banner-image {
     grid-column: 7 / span 6;
     position: relative;
+    justify-self: center;
 }
 
 .site-banner .banner-image > img {
@@ -92,15 +93,16 @@ header nav {
 
 .banner-promo {
     position: absolute;
+    display: flex;
     top: 25%;
     left: -2rem;
     background-color: #0B183C;
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    line-height: 5rem;
     word-wrap: normal;
 }
 
