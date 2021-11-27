@@ -1,14 +1,17 @@
+* {
+    margin: 0;
+}
+
 html, body {
     background-color: #F6F8F8;
     height: 100%;
-    margin: 0;
 }
 
 header {
     background-color: #3850B3;
     color: #fff;
     display: grid;
-    grid-template-columns: minmax(100px, 200px) auto minmax(100px, 250px);
+    grid-template-columns: minmax(min-content, 200px) auto minmax(min-content, 250px);
     align-items: center;
     height: 5rem;
     padding: 0 30px;
@@ -24,6 +27,7 @@ header ul {
     list-style-type: none;
     display: flex;
     justify-content: start;
+    flex-wrap: wrap;
 }
 
 header li {
@@ -36,6 +40,24 @@ header .logo {
 
 .site-banner {
     background-color: #3850B3;
+    display: grid;
+    grid: auto-flow minmax(min-content, 500px) / repeat(12, 1fr);
+    align-items: center;
+}
+
+.site-banner .banner-text {
+    grid-column: 1 / span 6;
+    justify-self: end;
+    margin-right: 2rem;
+}
+
+.site-banner .banner-text > h2, .site-banner .banner-text > p {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.site-banner .banner-image {
+    grid-column: 7 / span 6;
 }
 
 .main-card {
