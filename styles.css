@@ -86,6 +86,8 @@ header nav {
     width: 400px;
     height: 450px;
     border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .banner-promo {
@@ -99,6 +101,7 @@ header nav {
     text-align: center;
     color: #fff;
     line-height: 5rem;
+    word-wrap: normal;
 }
 
 .main-card {
