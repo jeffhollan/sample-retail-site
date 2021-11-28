@@ -304,9 +304,16 @@ button:active.teal {
 }
 
 footer {
-    background-color: #F6F8F8;
+    background-color: #fff;
+    width: 100%;
 }
 
 footer .footer-content {
-    background-color: #FFFFFF;
+    font-weight: 200;
+    font-size: .8rem;
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: left;
 }
