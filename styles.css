@@ -108,13 +108,14 @@ header nav {
     transition: background-color 200ms ease-in-out, 
                 color 200ms ease-in-out;
     padding: 18px 45px;
+    cursor: pointer;
     /* border: 0; */
 }
 
 .banner-text button:hover {
     background-color: #030e3a;
     color: #fff;
-    /* border: 0; */
+    cursor: pointer;
 }
 
 .banner-text button:active
