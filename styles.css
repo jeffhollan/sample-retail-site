@@ -331,7 +331,7 @@ footer .footer-content {
     gap: 1rem;
 }
 
-@media only screen and (min-device-width : 768px) {
+@media screen and (min-width : 768px) {
     .categories .container {
         grid: auto-flow 1fr / repeat(2, minmax(290px, 1fr));
     }
