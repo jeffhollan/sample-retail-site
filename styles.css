@@ -261,7 +261,35 @@ button:active.teal {
 }
 
 .categories {
-    background-color: #FFFFFF;
+    background-color: #F6F8F8;
+}
+
+.categories .container {
+    margin-top: 100px;
+    display: grid;
+    grid: auto-flow 1fr / repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-content: center;
+    justify-items: center;
+}
+
+.category-card {
+    width: 280px;
+    height: 280px;
+    position: relative;
+}
+
+.category-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    position: absolute;
+    bottom: 1.33%;
+    left: 10%;
 }
 
 footer {
