@@ -254,11 +254,11 @@ button:active.teal {
     max-width: 75px;
 }
 
-.carousel-arrow-left, .carousel-arrow-right {
+.carousel-arrow {
     position: absolute;
     top: calc(50% + 50px);
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background-color:#0D1631bb;
     border-radius: 50%;
     color:rgb(255, 255, 255);
@@ -267,6 +267,13 @@ button:active.teal {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: background-color 200ms;
+}
+
+.carousel-arrow:hover {
+    background-color: #0D1631;
+    color: #fff;
+    cursor: pointer;
 }
 
 .carousel-arrow-left {
