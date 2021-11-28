@@ -279,7 +279,7 @@ button:active.teal {
     margin-top: 100px;
     display: grid;
     grid: auto-flow 1fr / repeat(2, minmax(200px, 1fr));
-    grid-gap: 2rem;
+    gap: 5rem 0rem;
     align-content: center;
     justify-items: center;
     padding-bottom: 10rem;
@@ -287,8 +287,10 @@ button:active.teal {
 
 .category-card {
     width: 280px;
-    height: 280px;
+    height: 380px;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgb(0,0,0,.3);
 }
 
 .category-card > img {
@@ -296,12 +298,19 @@ button:active.teal {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: filter, 200ms;
 }
 
 .category-card h3 {
     position: absolute;
     bottom: 1.33%;
     left: 10%;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.category-card:hover > img {
+    filter: blur(2px);
 }
 
 footer {
